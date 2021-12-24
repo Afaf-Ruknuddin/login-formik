@@ -87,11 +87,11 @@ body{
 
 .hello{
   height: 100vh;
-  color: brown;
+  color: rgb(49, 81, 139);
   text-align: center;
   font-size: 5rem;
   text-transform: capitalize;
-  background-color: rgb(204, 204, 245);
+  background-color: white
 }
 
 .hello h1{
@@ -110,7 +110,45 @@ body{
   color: white;
 }
 
+.white, .red, .green{
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
 .center_div{
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 15rem;
+}
+
+.num_main{
+  border-radius: 25%;
+  background-color: rgb(49, 81, 139);
+  margin: 0 4rem 0 4rem;
+  padding: 2rem 4rem;
+}
+
+.incr{
+  align-items: center;
+  display: flex;
+  color: #f5f5f5;
+}
+
+.decr{
+  display: flex;
+  align-items: center;
+  color: #f5f5f5;
+}
+
+.main_div{
+  background-color: #c4c4c4;
+  height: 70vh;
+  width: 50vw;
+  align-items: center;
+  position: relative;
+  left: 25%;
+  border-radius: 10%;
+
 }

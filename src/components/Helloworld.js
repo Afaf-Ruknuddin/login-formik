@@ -7,7 +7,7 @@ const Helloworld = () => {
     const [red, setred] = useState(false)
     
 
-    const[num,setNum]=useState(98)
+    const[num,setNum]=useState(0)
     const incNum = () =>{
         setNum(num+1)
         // if(num>98){
@@ -43,9 +43,11 @@ const Helloworld = () => {
             <h1>hello world</h1>
             <div className='main_div'>
         <div className='center_div'>
-            <div className='incr' onClick={incNum}><AiOutlinePlus/></div>
-            <div className={green?"green":red?"red":"white"}>{num}</div>
             <div className='decr' onClick={decNum}><AiOutlineMinus/></div>
+            <div className="num_main">
+            <div className= {green?"green":red?"red":"white"}>{num}</div>
+            </div>
+            <div className='incr' onClick={incNum}><AiOutlinePlus/></div>
         </div>
     </div>
         </div>
